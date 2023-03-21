@@ -4,7 +4,7 @@ import {useEffect} from "react";
 export const ViewFile = ({token, name, date}) => {
     const [text, setText] = useState('')
     useEffect(() => {
-        fetch('http://localhost:3000/get_text', {
+        fetch('https://flash-tool.cstlore.repl.co/get_text', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
