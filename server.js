@@ -99,6 +99,6 @@ app.post('/rename', async (req, res) => {
     const files = fs.readdirSync(__dirname + '/public/' + req.body.token);
     res.send({ret: files})
 })
-app.listen(3000, () => {
+app.listen(80, () => {
     console.log('server is up');
 });
