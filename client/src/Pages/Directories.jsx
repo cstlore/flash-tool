@@ -21,7 +21,7 @@ export const Directories = ({token, setComputer}) => {
     }, [])
     const new_name = (val, nw, key) => {
         if (key === 'Enter') {
-            fetch('http://localhost:3000/rename', {
+            fetch('https://flash-tool.cstlore.repl.co/rename', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
