@@ -6,7 +6,7 @@ export const Directories = ({token, setComputer}) => {
     const [dirs, setDirs] = useState([])
     const [flag, setFlag] = useState('')
     useEffect(() => {
-        fetch('http://localhost:3000/get_all_files', {
+        fetch('https://flash-tool.cstlore.repl.co/get_all_files', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
