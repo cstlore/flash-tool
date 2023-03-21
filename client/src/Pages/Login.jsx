@@ -6,7 +6,7 @@ export const LoginPage = () => {
     const [token, setToken] = useState('')
     const [pass, setPass] = useState('')
     const send = () => {
-        fetch('http://localhost:3000/api/login', {
+        fetch('https://flash-tool.cstlore.repl.co/api/login', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
