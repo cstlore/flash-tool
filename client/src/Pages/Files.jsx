@@ -6,7 +6,7 @@ import {useEffect} from "react";
 export const Files = ({token, computer, setDate}) => {
     const [files, setFiles] = useState([])
     useEffect(() => {
-        fetch('http://localhost:3000/get_dir', {
+        fetch('https://flash-tool.cstlore.repl.co/get_dir', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
